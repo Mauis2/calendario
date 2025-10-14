@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Calendario de Notas</title>
+    <link rel="stylesheet" href="/assets/css/login-styles.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <div class="caja-login">
+            <h1>📅 Calendario de Notas</h1>
+            
+            <!-- Formulario de Login -->
+            <div id="form-login" class="formulario activo">
+                <h2>Iniciar Sesión</h2>
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button id="btn-login" class="boton-principal">Entrar</button>
+                <p class="cambiar-form">¿No tienes cuenta? <a href="#" id="mostrar-registro">Regístrate aquí</a></p>
+            </div>
+            
+            <!-- Formulario de Registro -->
+            <div id="form-registro" class="formulario">
+                <h2>Crear Cuenta</h2>
+                <input type="text" id="registro-nombre" placeholder="Nombre completo" required>
+                <input type="email" id="registro-email" placeholder="Correo electrónico" required>
+                <input type="password" id="registro-password" placeholder="Contraseña (mín. 6 caracteres)" required>
+                <input type="password" id="registro-password2" placeholder="Confirmar contraseña" required>
+                <button id="btn-registro" class="boton-principal">Crear Cuenta</button>
+                <p class="cambiar-form">¿Ya tienes cuenta? <a href="#" id="mostrar-login">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+     <script src="/assets/js/login.js"></script>
+</body>
+</html>
